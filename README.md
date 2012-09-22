@@ -1,6 +1,6 @@
 # Pianobar Growl
 
-Growl notifications for [http://6xq.net/projects/pianobar/](Pianobar)!
+Growl notifications for [Pianobar](http://6xq.net/projects/pianobar/)!
 
 - - -
 
@@ -14,7 +14,7 @@ For those not familiar with Pianobar's configuration file, add this line to ```~
 
 ```event_command = /path/to/script/pianobar-growl.rb```
 
-If any of those directories or the file doesn't exist, go ahead and create them. If you want more information on the Pianobar config file, check out this [https://github.com/PromyLOPh/pianobar/blob/master/contrib/config-example](example one), or take a look at the manpage.
+If any of those directories or the file doesn't exist, go ahead and create them. If you want more information on the Pianobar config file, check out this [example one](https://github.com/PromyLOPh/pianobar/blob/master/contrib/config-example), or take a look at the manpage.
 
 ### Dependencies
 
