@@ -18,7 +18,9 @@ If any of those directories or the file doesn't exist, go ahead and create them.
 
 ### Dependencies
 
-Just make sure you have Ruby 1.9 installed. It's a Ruby script, after all...oh, and Growl. You'll need that.
+This script will only work (/correctly/) with Ruby > 1.9.3 due to shellwords barfing on unicode in previous versions :(
+
+Also be sure you have Growl installed and running, otherwise this script is useless!
 
 ### Other Stuff
 
