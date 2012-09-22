@@ -26,9 +26,6 @@ end
 
 data = parse_event(event)
 
-# Exit if we aren't receiving now playing info
-exit 0 unless data[:title]
-
 # The data we want
 artist = data[:artist]
 song   = data[:title]
