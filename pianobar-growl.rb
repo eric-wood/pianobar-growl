@@ -31,6 +31,8 @@ artist = data[:artist]
 song   = data[:title]
 album  = data[:album]
 
+heart = "<3" if data[:rating] == '1'
+
 # The AppleScript for creating the growl notification
 script = <<-END
 tell application "System Events"
@@ -41,7 +43,7 @@ if isRunning then
 	tell application id "com.Growl.GrowlHelperApp"
 		register as application "Pianobar" all notifications {"Now Playing"} default notifications {"Now Playing"} icon of application "iTunes.app"
 		
-		notify with name "Now Playing" title "#{song}" description "by #{artist}\non #{album}" application name "Pianobar"
+		notify with name "Now Playing" title "#{song} #{heart}" description "by #{artist}\non #{album}" application name "Pianobar"
 		
 	end tell
 end if
