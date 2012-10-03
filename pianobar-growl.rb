@@ -49,4 +49,12 @@ if isRunning then
 end if
 END
 
-`osascript -e #{script.shellescape}`
+# Sometimes the stupid shellwords stuff shits a brick on unicode.
+# Ruby 1.9.3 improves this, but for whatever reason it still doesn't
+# work randomly. Rather than polluting the pianobar output with a
+# stack trace, we'll just ignore it and exit gracefully instead.
+begin
+  `osascript -e #{script.shellescape}`
+rescue Exception
+  exit 1
+end
